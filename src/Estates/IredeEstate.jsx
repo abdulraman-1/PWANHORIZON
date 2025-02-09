@@ -21,7 +21,7 @@ const HavenEstate = () => {
         {/* Main Content Section */}
         <section className="flex flex-col md:flex-row items-center mb-12">
           {/* Image Section */}
-          <div className="w-full md:w-1/2 p-4">
+          <div className="w-full md:w-1/2 py-4">
             <img
               src={irede}
               alt="Burckingham Estate"

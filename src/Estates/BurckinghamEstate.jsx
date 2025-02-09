@@ -29,7 +29,7 @@ const BurckinghamEstate = () => {
             />
           </div>
           {/* Text Content Section */}
-          <div className="w-full md:w-1/2 p-4">
+          <div className="w-full md:w-1/2 py-4">
             <div className="">
               <h2 className="text-2xl font-semibold mb-4">
                 About Burckingham <span className="text-red-500">Estate</span>
