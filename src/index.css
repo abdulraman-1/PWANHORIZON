@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.location {
+    position: relative;
+}
+
+.location::after {
+    content: '';
+    width: 100px;
+    height: 30px;
+    background-color: grey;
+    opacity: 0.5;
+    position: absolute;
+    top: -0.3rem;
+    left: 5rem;
+    z-index: -10000;
+}
+.location::before {
+    content: '';
+    width: 2px;
+    height: 40px;
+    background-color: red;
+    position: absolute;
+    top: -8px;
+    bottom: 0;
+    left: 0;
+}

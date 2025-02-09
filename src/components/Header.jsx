@@ -1,0 +1,40 @@
+import { Link } from "react-router-dom"
+import HamburgerMenu from "./HamburgerMenu";
+import { useLocation } from "react-router-dom";
+
+const Header = () => {
+  const location = useLocation();
+  let title =
+    location.pathname.split("/")[1].toUpperCase()
+
+    if (title === '') {
+        title = "PWANHORIZON";
+    }
+
+  return (
+    <header className="w-full fixed left-0 right-0 top-0 h-20 bg-white shadow pr-6 lg:pr-12 pl-72 z-50">
+        <div className="absolute top-0 left-0 lg:w-72 pl-6 h-20 flex items-center justify-center">
+            <Link to="/">
+                <img src="/PWANHORIZON.png" alt="PWANHAVEN LOGO" className="h-12" />
+            </Link>
+        </div>
+
+        <div className="flex justify-between items-center h-20">
+            <span className="location text-base text-gray-600 pl-8 hidden lg:block">{title}</span>
+
+            <div className="flex gap-1 items-center lg:ml-0 ml-auto">
+                <li className="lg:hidden block ">
+                    <HamburgerMenu />
+                </li>
+                <button className="flex items-center p-3 gap-2 text-xs lg:text-sm text-white bg-red-600 rounded-sm whitespace-nowrap">
+                    <Link to="https://api.whatsapp.com/message/BA6DNO77GCMPL1?autoload=1&app_absent=0" target="_blank">
+                        { "LET'S CHAT" }
+                    </Link>
+                </button>
+            </div>
+        </div>
+    </header>
+  )
+}
+
+export default Header
