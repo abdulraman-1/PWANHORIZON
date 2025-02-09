@@ -1,4 +1,4 @@
-import MainLayout from "../../Layout/Mainlayout";
+import MainLayout from "../../Layout/MainLayout";
 
 const Webinar = () => {
   return (

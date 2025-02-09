@@ -1,4 +1,4 @@
-import MainLayout from "../Layout/Mainlayout";
+import MainLayout from "../Layout/MainLayout";
 import burckingham from "../assets/PDF/burckingham.png";
 
 import CTA from '../components/CTA';

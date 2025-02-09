@@ -1,4 +1,4 @@
-import MainLayout from "../Layout/Mainlayout";
+import MainLayout from "../Layout/MainLayout";
 import horizon from "../assets/PDF/horizon.png";
 
 import CTA from '../components/CTA'

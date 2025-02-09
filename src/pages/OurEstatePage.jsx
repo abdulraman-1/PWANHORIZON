@@ -1,4 +1,4 @@
-import MainLayout from "../Layout/Mainlayout";
+import MainLayout from "../Layout/MainLayout";
 import EstateCard from "../components/EstateCard";
 
 import { Link } from "react-router-dom";
@@ -37,14 +37,15 @@ const OurEstatePage = () => {
           </h1>
 
           {/* Estate Cards Grid */}
+          {/* Estate Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {estate.map((estate, index) => (
-              <Link to={estate.path}>
-
-                <EstateCard key={index} estatename={estate.label} />
+            {estate.map((item, index) => (
+              <Link key={index} to={item.path}>
+                <EstateCard estatename={item.label} />
               </Link>
             ))}
           </div>
+
         </div>
       </div>
     </MainLayout>

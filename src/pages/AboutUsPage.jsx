@@ -1,4 +1,4 @@
-import MainLayout from "../Layout/Mainlayout";
+import MainLayout from "../Layout/MainLayout";
 import estateimage from '/people.jpg'
 import staffimage from '/people1.jpg'
 import chairman from '../assets/chairman.png'

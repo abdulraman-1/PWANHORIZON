@@ -1,4 +1,4 @@
-import MainLayout from "../Layout/Mainlayout";
+import MainLayout from "../Layout/MainLayout";
 import obibi from "../assets/PDF/OBIBI.png";
 
 import CTA from '../components/CTA'
