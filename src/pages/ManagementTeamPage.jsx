@@ -2,7 +2,7 @@ import Mainlayout from "../MainLayout";
 import peace from '../assets/peace.jpg';
 import Daniel from '../assets/Daniel.jpg';
 
-import { FaLinkedin, FaTwitter, FaInstagram, FaFacebookF } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaFacebookF } from "react-icons/fa";
 
 import CTA from '../components/CTA';
 import Footer from '../components/Footer';
@@ -31,24 +31,32 @@ const ManagementTeamPage = () => {
               />
               
               {/* Social Icons Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent flex items-end justify-center pb-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="flex gap-4">
-                  <a href="#" className="p-2 bg-white rounded-full hover:bg-blue-600 hover:text-white transition-all">
-                    <FaLinkedin className="w-5 h-5" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent flex items-end justify-center pb-30 md:pb-40 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
+                <div className="flex gap-4 p-2">
+                  <a href="https://www.linkedin.com/in/daniel-nnadi-global-salesman-7837ab56/"
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="lg:p-3 p-2 bg-white rounded-full hover:bg-blue-600 active:scale-95 hover:text-white transition-all">
+                    <FaLinkedin className="w-8 h-8 md:w-5 md:h-5" />
                   </a>
-                  <a href="#" className="p-2 bg-white rounded-full hover:bg-blue-400 hover:text-white transition-all">
-                    <FaTwitter className="w-5 h-5" />
+                  
+                  <a href="https://www.instagram.com/global.salesman/"
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="lg:p-3 p-2 bg-white rounded-full hover:bg-pink-500 active:scale-95 hover:text-white transition-all">
+                    <FaInstagram className="w-8 h-8 md:w-5 md:h-5" />
                   </a>
-                  <a href="https://www.instagram.com/global.salesman/" target="_blank" className="p-2 bg-white rounded-full hover:bg-pink-500 hover:text-white transition-all">
-                    <FaInstagram className="w-5 h-5" />
+                  <a href="https://www.facebook.com/Daniel.Nnadi/?_rdr"
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="lg:p-3 p-2 bg-white rounded-full hover:bg-pink-500 active:scale-95 hover:text-white transition-all">
+                    <FaFacebookF className="w-8 h-8 md:w-5 md:h-5" />
                   </a>
-                  <a href="https://www.facebook.com/Daniel.Nnadi/?_rdr" target="_blank" className="p-2 bg-white rounded-full hover:bg-blue-700 hover:text-white transition-all">
-                    <FaFacebookF className="w-5 h-5" />
-                  </a>
+                  
                 </div>
               </div>
+            
             </div>
-
             {/* Text Overlay */}
             <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
               <h3 className="text-xl font-bold text-white mb-1">
@@ -73,22 +81,7 @@ const ManagementTeamPage = () => {
               />
               
               {/* Social Icons Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent flex items-end justify-center pb-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="flex gap-4">
-                  <a href="https://www.linkedin.com/in/daniel-nnadi-global-salesman-7837ab56/" target="_blank" className="p-2 bg-white rounded-full hover:bg-blue-600 hover:text-white transition-all">
-                    <FaLinkedin className="w-5 h-5" />
-                  </a>
-                  <a href="#" className="p-2 bg-white rounded-full hover:bg-blue-400 hover:text-white transition-all">
-                    <FaTwitter className="w-5 h-5" />
-                  </a>
-                  <a href="#" className="p-2 bg-white rounded-full hover:bg-pink-500 hover:text-white transition-all">
-                    <FaInstagram className="w-5 h-5" />
-                  </a>
-                  <a href="#" className="p-2 bg-white rounded-full hover:bg-blue-700 hover:text-white transition-all">
-                    <FaFacebookF className="w-5 h-5" />
-                  </a>
-                </div>
-              </div>
+              
             </div>
 
             <div className="absolute bottom-0 left-0 right-0 p-6 text-center">

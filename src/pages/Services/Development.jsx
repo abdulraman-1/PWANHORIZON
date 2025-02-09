@@ -1,4 +1,6 @@
 import MainLayout from "../../MainLayout";
+import { Link } from "react-router-dom"
+
 
 const Development = () => {
   return (
@@ -89,12 +91,13 @@ const Development = () => {
           <p className="text-lg mb-8">
             Let’s collaborate to create exceptional spaces that stand the test of time. Contact us today to start your development journey.
           </p>
-          <a
-            href="/contact"
-            className="inline-block bg-green-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-700 transition-colors"
+          <Link
+            to="/contact"
+            className="inline-block bg-purple-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
           >
+           
             Contact Us
-          </a>
+          </Link>
         </div>
       </section>
     </MainLayout>

@@ -6,23 +6,23 @@ const BuyCard = () => {
   const sqrtFoot = [
     {
       label: "burckinham",
-      SQM: "465 SQM"
+      SQM: "N10M FOR 465 SQM"
     },
     {
       label: "duke",
-      SQM: ["500 SQM", "300 SQM"]
+      SQM: ["N3.2M FOR 500 SQM", "N2M 300 SQM"]
     },
     {
       label: "horizon",
-      SQM: "464 SQM"
+      SQM: "N6M 464 SQM"
     },
     {
       label: "obibi",
-      SQM: "464 SQM"
+      SQM: "N1.999M 464 SQM"
     },
     {
       label: "irede",
-      SQM: ["500 SQM", "300 SQM"]
+      SQM: ["N7M 500 SQM", "4.5M 300 SQM"]
     },
   ];
 
@@ -167,14 +167,14 @@ const BuyCard = () => {
         {/* SQM Selection (Populated based on estate selection) */}
         {sqmOptions.length > 0 && (
           <div>
-            <label className="block text-gray-700 mb-2">Select SQM</label>
+            <label className="block text-gray-700 mb-2">Select Square Meter</label>
             <div className="relative">
               <select
                 className="appearance-none w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 value={sqm}
                 onChange={(e) => setSQM(e.target.value)}
               >
-                <option value="">Select an SQM</option>
+                <option value="">Select an Square Meter</option>
                 {sqmOptions.map((option, index) => (
                   <option key={index} value={option}>
                     {option}

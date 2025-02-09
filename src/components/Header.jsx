@@ -4,7 +4,9 @@ import { useLocation } from "react-router-dom";
 
 const Header = () => {
   const location = useLocation();
-  let title = location.pathname.split("/")[1].toUpperCase();
+  let title = location.pathname.split("/")[1]
+    .replace(/-/g, " ")  // Replace dashes with spaces
+    .toUpperCase();
 
   if (title === "") {
     title = "PWANHORIZON";
@@ -30,12 +32,12 @@ const Header = () => {
             <HamburgerMenu />
           </li>
           <button className="flex items-center p-3 gap-2 text-xs lg:text-sm text-white bg-red-600 rounded-sm whitespace-nowrap">
-            <Link
+            <a
               href="https://api.whatsapp.com/message/BA6DNO77GCMPL1?autoload=1&app_absent=0"
               target="_blank"
             >
               { "LET'S CHAT" }
-            </Link>
+            </a>
           </button>
         </div>
       </div>

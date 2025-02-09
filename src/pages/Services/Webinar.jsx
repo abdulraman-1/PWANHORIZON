@@ -1,4 +1,5 @@
 import MainLayout from "../../MainLayout";
+import { Link } from "react-router-dom"
 
 const Webinar = () => {
   return (
@@ -85,12 +86,12 @@ const Webinar = () => {
           <p className="text-lg mb-8">
             Don’t miss this opportunity to gain expert insights and network with industry professionals.
           </p>
-          <a
-            href="/register"
-            className="inline-block bg-indigo-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-indigo-700 transition-colors"
+          <Link
+            to="/contact"
+            className="inline-block bg-purple-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
           >
             Register Today
-          </a>
+          </Link>
         </div>
       </section>
     </MainLayout>

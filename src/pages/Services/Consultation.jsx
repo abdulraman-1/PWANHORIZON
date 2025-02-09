@@ -1,4 +1,5 @@
 import MainLayout from "../../MainLayout";
+import { Link } from "react-router-dom"
 
 
 const Consultation = () => {
@@ -83,12 +84,12 @@ const Consultation = () => {
           <p className="text-lg mb-8">
             Schedule your free consultation today and gain the insights you need to succeed in real estate.
           </p>
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="inline-block bg-purple-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
           >
             Book a Consultation
-          </a>
+          </Link>
         </div>
       </section>
     </MainLayout>

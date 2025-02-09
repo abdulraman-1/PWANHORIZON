@@ -1,4 +1,5 @@
 import MainLayout from "../../MainLayout";
+import { Link } from "react-router-dom"
 
 const Surveying = () => {
   return (
@@ -79,12 +80,12 @@ const Surveying = () => {
           <p className="text-lg mb-8">
             Contact us today to schedule your survey and ensure your project is built on a foundation of accurate, reliable measurements.
           </p>
-          <a
-            href="/contact"
-            className="inline-block bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+          <Link
+            to="/contact"
+            className="inline-block bg-purple-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       </section>
     </MainLayout>

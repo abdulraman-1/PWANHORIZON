@@ -1,37 +1,40 @@
+import { Suspense, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Approute from './Approute';
-import HomePage from './pages/HomePage';
-import AboutUsPage from './pages/AboutUsPage';
-import OurFondersPage from './pages/OurFondersPage';
-import ManagementTeamPage from './pages/ManagementTeamPage';
-import ContactUsPage from './pages/ContactUsPage';
-import BuyNowPage from './pages/BuyNowPage';
-import ServicesPage from './pages/ServicesPage';
-import OurEstatePage from './pages/OurEstatePage';
-import ProjectGalleryPage from './pages/ProjectGalleryPage';
+import ScrollToTop from './ScrollToTop';
 
-import BurckinghamEstate from "./Estates/BurckinghamEstate";
-import HorizonEstate from './Estates/HorizonEstate';
-import IredeEstate from './Estates/IredeEstate';
-import ObibiEze from './Estates/ObibiEze';
-import DukeAndDuchess from './Estates/DukeAndDuchess';
+// Lazy load your components and pages
+const Approute = lazy(() => import('./Approute'));
+const HomePage = lazy(() => import('./pages/HomePage'));
+const AboutUsPage = lazy(() => import('./pages/AboutUsPage'));
+const OurFondersPage = lazy(() => import('./pages/OurFondersPage'));
+const ManagementTeamPage = lazy(() => import('./pages/ManagementTeamPage'));
+const ContactUsPage = lazy(() => import('./pages/ContactUsPage'));
+const BuyNowPage = lazy(() => import('./pages/BuyNowPage'));
+const ServicesPage = lazy(() => import('./pages/ServicesPage'));
+const OurEstatePage = lazy(() => import('./pages/OurEstatePage'));
+const ProjectGalleryPage = lazy(() => import('./pages/ProjectGalleryPage'));
 
-import Investment from './pages/Services/Investment';
-import Management from './pages/Services/Management';
-import Development from './pages/Services/Development';
-import Consultation from './pages/Services/Consultation';
-import Surveying from './pages/Services/Surveying';
-import Webinar from './pages/Services/Webinar';
+const BurckinghamEstate = lazy(() => import('./Estates/BurckinghamEstate'));
+const HorizonEstate = lazy(() => import('./Estates/HorizonEstate'));
+const IredeEstate = lazy(() => import('./Estates/IredeEstate'));
+const ObibiEze = lazy(() => import('./Estates/ObibiEze'));
+const DukeAndDuchess = lazy(() => import('./Estates/DukeAndDuchess'));
 
-import ScrollToTop from './ScrollToTop'; // import the new component
+const Investment = lazy(() => import('./pages/Services/Investment'));
+const Management = lazy(() => import('./pages/Services/Management'));
+const Development = lazy(() => import('./pages/Services/Development'));
+const Consultation = lazy(() => import('./pages/Services/Consultation'));
+const Surveying = lazy(() => import('./pages/Services/Surveying'));
+const Webinar = lazy(() => import('./pages/Services/Webinar'));
 
 const App = () => {
   return (
-    <>
-      <ScrollToTop /> {/* This ensures that every route change scrolls to the top */}
+    // Wrap your entire Routes tree in Suspense so that lazy components display a fallback while loading.
+    <Suspense fallback={<div></div>}>
+      <ScrollToTop />
       <Routes>
-        <Route path='/' element={<Approute/>}>
-          <Route index path="/" element={<HomePage />} />
+        <Route path='/' element={<Approute />}>
+          <Route index element={<HomePage />} />
           <Route path="/about" element={<AboutUsPage />} />
           <Route path="/founders" element={<OurFondersPage />} />
           <Route path="/management" element={<ManagementTeamPage />} />
@@ -41,11 +44,11 @@ const App = () => {
           <Route path="/ourestate" element={<OurEstatePage />} />
           <Route path="/project" element={<ProjectGalleryPage />} />
 
-          <Route path="/burckinham" element={<BurckinghamEstate />} />
-          <Route path="/horizon" element={<HorizonEstate />} />
-          <Route path="/irede" element={<IredeEstate />} />
-          <Route path="/obibieze" element={<ObibiEze />} />
-          <Route path="/dukeandduchess" element={<DukeAndDuchess />} />
+          <Route path="/buckingham-court" element={<BurckinghamEstate />} />
+          <Route path="/horizon-court" element={<HorizonEstate />} />
+          <Route path="/irede-estate" element={<IredeEstate />} />
+          <Route path="/obibieze-estate" element={<ObibiEze />} />
+          <Route path="/duke-and-duchess-estate" element={<DukeAndDuchess />} />
 
           <Route path="/investment" element={<Investment />} />
           <Route path="/estatemanagement" element={<Management />} />
@@ -55,8 +58,8 @@ const App = () => {
           <Route path="/webinar" element={<Webinar />} />
         </Route>
       </Routes>
-    </>
+    </Suspense>
   );
-}
+};
 
 export default App;

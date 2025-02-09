@@ -1,4 +1,5 @@
 import MainLayout from "../../MainLayout";
+import { Link } from "react-router-dom"
 
 const Investment = () => {
   return (
@@ -46,12 +47,12 @@ const Investment = () => {
           <p className="text-lg mb-8">
             Contact us today to learn more about our real estate investment services and discover how we can help you secure your financial future.
           </p>
-          <a
-            href="/contact"
-            className="inline-block bg-red-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-red-700 transition-colors"
+          <Link
+            to="/contact"
+            className="inline-block bg-purple-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       </section>
     </MainLayout>
