@@ -28,7 +28,7 @@ const ContactUsPage = () => {
 
       {/* Contact Content */}
       <section className="py-16  md:px-8">
-        <div className=" mx-auto grid md:grid-cols-2 gap-12">
+        <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Left Column - Contact Info */}
           <div className="space-y-8">
             <div className="bg-white p-8 rounded-2xl shadow-lg">
