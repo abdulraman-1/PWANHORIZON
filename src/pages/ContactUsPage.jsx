@@ -1,4 +1,4 @@
-import MainLayout from "../layout/MainLayout";
+import MainLayout from "../MainLayout";
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaFacebookF, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 import contact from '../assets/pwan2.jpg'
 import ContactCard from "../components/ContactCard";

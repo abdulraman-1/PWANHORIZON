@@ -1,4 +1,4 @@
-import MainLayout from "../layout/MainLayout";
+import MainLayout from "../MainLayout";
 import duke from "../assets/PDF/duke.jpg";
 
 import CTA from '../components/CTA'

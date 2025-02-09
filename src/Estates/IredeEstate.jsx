@@ -1,4 +1,4 @@
-import MainLayout from "../layout/MainLayout";
+import MainLayout from "../MainLayout";
 import irede from "../assets/PDF/IREDE.png";
 
 import CTA from '../components/CTA'

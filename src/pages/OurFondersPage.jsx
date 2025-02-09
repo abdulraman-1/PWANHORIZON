@@ -1,4 +1,4 @@
-import MainLayout from "../layout/MainLayout";
+import MainLayout from "../MainLayout";
 import chairman from '../assets/chairman.png'
 import president from '../assets/president.jpg'
 import { FaLinkedin, FaTwitter, FaInstagram, FaFacebookF } from "react-icons/fa";

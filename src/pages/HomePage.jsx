@@ -1,7 +1,7 @@
+import MainLayout from "../MainLayout";
 import { useState, useEffect } from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import { motion } from "framer-motion";
-import MainLayout from "../layout/MainLayout";
 import realestate from '../assets/real-estate.jpg';
 import building from '../assets/bulding.jpg';
 import estate from '../assets/realestate.jpg';
