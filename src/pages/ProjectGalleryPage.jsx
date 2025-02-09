@@ -1,4 +1,4 @@
-import MainLayout from '../Layout/MainLayout'
+import MainLayout from '../layout/MainLayout'
 import people from '../../public/people.jpg'
 import people1 from '../../public/people1.jpg'
 import people2 from '../../public/people2.jpg'

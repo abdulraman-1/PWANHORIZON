@@ -1,4 +1,4 @@
-import Mainlayout from "../Layout/MainLayout";
+import Mainlayout from "../layout/MainLayout";
 import peace from '../assets/peace.jpg';
 import Daniel from '../assets/Daniel.jpg';
 
