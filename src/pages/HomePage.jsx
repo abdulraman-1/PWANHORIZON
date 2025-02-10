@@ -67,7 +67,7 @@ const HomePage = () => {
             ))}
           </div>
           <button className="bg-red-600 text-white px-8 py-3 rounded-lg hover:bg-red-700 transition-colors mt-32">
-            <a href="https://api.whatsapp.com/send/?phone=08033036833&text&type=phone_number&app_absent=0" target="_blank" >
+            <a href="https://api.whatsapp.com/send/?phone=2348033036833&text&type=phone_number&app_absent=0" target="_blank" >
               Schedule A Tour
             </a>
           </button>

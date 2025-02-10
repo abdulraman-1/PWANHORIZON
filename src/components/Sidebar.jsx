@@ -29,7 +29,8 @@ const Sidebar = () => {
         hamburgerOpen ? "translate-x-0" : "-translate-x-full"
       } fixed top-0 left-0 pt-20 bg-white w-72 h-screen overflow-y-auto shadow-md z-30 lg:translate-x-0 transition-transform duration-300 ease-in-out`}
     >
-      <div className="flex flex-col justify-between h-full px-4">
+      {/* Wrapping container with relative positioning for the fade-out indicator */}
+      <div className="relative flex flex-col justify-between h-full px-4">
         {/* Menu Items */}
         <ul className="space-y-1">
           {[
@@ -62,7 +63,7 @@ const Sidebar = () => {
               path: "/ourestate",
               subItems: [
                 { label: "Buckingham Court", path: "/buckingham-court" },
-                { label: "Duke And Duchess Estate", path: "/duke-and-duchess-estate"},
+                { label: "Duke And Duchess Estate", path: "/duke-and-duchess-estate" },
                 { label: "Horizon Court", path: "/horizon-court" },
                 { label: "Obibi Eze Estate", path: "/obibieze-estate" },
                 { label: "Irede Estate", path: "/irede-estate" },
@@ -155,6 +156,9 @@ const Sidebar = () => {
             ))}
           </div>
         </div>
+        
+        {/* Fade-out Indicator */}
+        <div className="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-white to-transparent pointer-events-none" />
       </div>
     </nav>
   );
