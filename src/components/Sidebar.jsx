@@ -6,6 +6,7 @@ import {
   FaPhone,
   FaInstagram,
   FaLinkedin,
+  FaFacebookF,
   FaUsers,
   FaBuilding,
   FaVideo,
@@ -135,6 +136,7 @@ const Sidebar = () => {
           <h3 className="text-sm uppercase text-gray-500 font-bold mt-6 mb-4">Stay Connected</h3>
           <div className="flex gap-3">
             {[
+              { icon: <FaFacebookF size={16} />, color: "bg-pink-500", link: "https://www.facebook.com/profile.php?id=61567178751846" },
               { icon: <FaInstagram size={16} />, color: "bg-pink-500", link: "https://www.instagram.com/pwanhorizon/" },
               { icon: <FaLinkedin size={16} />, color: "bg-blue-700", link: "https://www.linkedin.com/company/pwanhorizon" },
             ].map((social, index) => (

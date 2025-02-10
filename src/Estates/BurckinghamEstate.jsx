@@ -103,7 +103,7 @@ const BurckinghamEstate = () => {
         <section className="text-center">
           <button className="bg-red-500 text-white py-3 px-8 rounded-full font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
             <a 
-              href="src/assets/PDF/BUCKINGHAMCOURTSUBSCRIPTIONFORM.pdf" 
+              href="/subscriptionbuckingham.pdf" 
               target="_blank" 
               rel="noopener noreferrer"
             >

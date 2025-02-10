@@ -7,23 +7,23 @@ const OurEstatePage = () => {
   const estate = [
     {
       label: "Irede",
-      path: "/irede"
+      path: "/irede-estate"
     },
     {
       label: "Duke and Duchess",
-      path: "/duke"
+      path: "/duke-and-duchess-estate"
     },
     {
       label: "Buckingham Estate",
-      path: "/burckinham"
+      path: "/buckingham-court"
     },
     {
       label: "Horizon Court",
-      path: "/horizon"
+      path: "/horizon-court"
     },
     {
       label: "Obibi Eze",
-      path: "/obibi"
+      path: "/obibieze-estate"
     }
   ];
 

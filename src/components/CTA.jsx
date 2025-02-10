@@ -11,7 +11,7 @@ const CTA = () => {
             Schedule a free consultation with our experts to discover the best solutions for your needs
         </p>
         <button className="bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors font-semibold">
-            <Link to="https://api.whatsapp.com/message/BA6DNO77GCMPL1?autoload=1&app_absent=0" target="_blank">
+            <Link to="https://api.whatsapp.com/send/?phone=08033036833&text&type=phone_number&app_absent=0" target="_blank">
 
                 Book Consultation
             </Link>

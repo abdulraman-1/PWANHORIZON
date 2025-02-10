@@ -1,5 +1,5 @@
 import MainLayout from "../MainLayout";
-import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaLinkedin, FaInstagram, FaFacebookF } from "react-icons/fa";
 import contact from '../assets/pwan2.jpg'
 import ContactCard from "../components/ContactCard";
 
@@ -69,6 +69,9 @@ const ContactUsPage = () => {
               <div className="mt-8 pt-6 border-t border-gray-200">
                 <h4 className="text-lg font-semibold text-gray-800 mb-4">Follow Us</h4>
                 <div className="flex gap-4">
+                  <a href="https://www.facebook.com/profile.php?id=61567178751846" target="_blank" className="p-3 bg-blue-500 text-white rounded-full hover:bg-blue-700 transition-colors">
+                    <FaFacebookF className="w-5 h-5" />
+                  </a>
                   <a href="https://www.instagram.com/pwanhorizon/" target="_blank" className="p-3 bg-blue-500 text-white rounded-full hover:bg-blue-700 transition-colors">
                     <FaInstagram className="w-5 h-5" />
                   </a>
