@@ -44,7 +44,7 @@ const Sidebar = () => {
                 { label: "Real Estate Management", path: "/estatemanagement" },
                 { label: "Property Development", path: "/development" },
                 { label: "Real Estate Consultant", path: "/consultation" },
-                { label: "Land Surveying", path: "/surveying" },
+                { label: "Land Survey", path: "/survey" },
                 { label: "Seminars and Webinars", path: "/webinar" },
               ],
             },
